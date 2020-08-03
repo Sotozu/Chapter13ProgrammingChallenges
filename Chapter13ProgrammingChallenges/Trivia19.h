@@ -27,6 +27,9 @@ public:
 
 	//Member Function
 	bool isCorrect(int, int) const;
+	
+	//Destructor
+	~Trivia19();
 
 };
 

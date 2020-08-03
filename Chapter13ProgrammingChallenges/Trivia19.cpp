@@ -149,3 +149,13 @@ bool Trivia19::isCorrect(int user_choice, int question) const {
 	return false;
 };
 
+Trivia19::~Trivia19(){
+	  for(int i = 0; i < QUESTIONS; ++i) {
+        delete[] answer[i];   
+    }
+    //Free the array of pointers
+    delete[] answer;
+	
+    delete[] question;
+}
+

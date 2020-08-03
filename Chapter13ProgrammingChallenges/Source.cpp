@@ -22,7 +22,7 @@
 //#include "CashRegister.h"
 //#include "InventoryItem.h"
 //#include "Game21.h";
-//#include "Trivia19.h"
+#include "Trivia19.h"
 //#include "PatientAccount.h"
 using namespace std;
 
@@ -796,7 +796,7 @@ using namespace std;
 //	return 0;
 //}
 
-// 19. Trivia Game
+ //19. Trivia Game
 //
 //int main() {
 //	srand(time(0));
