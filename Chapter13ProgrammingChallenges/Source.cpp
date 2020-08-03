@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>;
+#include <iomanip>
 #include <string>
 #include <memory>
 #include <time.h>
@@ -22,7 +22,8 @@
 //#include "CashRegister.h"
 //#include "InventoryItem.h"
 //#include "Game21.h";
-
+//#include "Trivia19.h"
+//#include "PatientAccount.h"
 using namespace std;
 
 // 1. Date
@@ -795,4 +796,128 @@ using namespace std;
 //	return 0;
 //}
 
-// 19. 
+// 19. Trivia Game
+//
+//int main() {
+//	srand(time(0));
+//	const int QUESTION = 10;
+//	int player1_score = 0, player2_score = 0;
+//	int player1_choice, player2_choice;
+//
+//	Trivia19 game;
+//
+//	for (int i = 0; i < QUESTION; i++) {
+//		game.playGame(i);
+//
+//		cout << "Player 1: "; cin >> player1_choice;
+//	
+//		cout << "Player 2: "; cin >> player2_choice;
+//		
+//		cout << endl;
+//
+//
+//		if (game.isCorrect(player1_choice, i)) {
+//			cout << "CORRECT choice player 1!" << endl;
+//			player1_score++;
+//		}
+//		else {
+//			cout << "WRONG choice player 1!" << endl;
+//		}
+//
+//		if (game.isCorrect(player2_choice, i)) {
+//			cout << "CORRECT choice player 2!" << endl;
+//			player1_score++;
+//		}
+//		else {
+//			cout << "WRONG choice player 2!" << endl;
+//		}
+//		cout << endl;
+//	}
+//
+//
+//	cout << endl;
+//	if (player1_score < player2_score) {
+//		cout << "PLAYER 2 WINS!" << endl;
+//	}
+//	else {
+//		cout << "PLAYER 1 WINS!" << endl;
+//	}
+//
+//return 0;
+//}
+
+// 20. Patient Fees
+//void showMainMenu();
+//int main() {
+//	int user_m_choice, user_s_choice, user_p_choice, num_days;
+//	PatientAccount alex;
+//	do {
+//
+//		showMainMenu();
+//		do {
+//			cout << "ENTER CHOICE: "; cin >> user_m_choice;
+//			if (user_m_choice < 1 || user_m_choice > 3) {
+//				cout << "ERROR: Please enter a valid option.\n";
+//			}
+//		} while (user_m_choice < 1 || user_m_choice > 3);
+//
+//
+//		switch (user_m_choice) {
+//		case 1:
+//			cout << endl;
+//			alex.showSurgePnN();
+//			cout << endl;
+//			do {
+//				cout << "ENTER CHOICE: "; cin >> user_s_choice;
+//				if (user_s_choice < 1 || user_s_choice > 5) {
+//					cout << "ERROR: Please enter a valid option.\n";
+//				}
+//			} while (user_s_choice < 1 || user_s_choice > 5);
+//			
+//			alex.addSurgeCost(user_s_choice-1);
+//
+//			cout << endl;
+//			break;
+//		case 2:
+//			cout << endl;
+//			alex.showPharmacyPnN();
+//			cout << endl;
+//			do {
+//				cout << "ENTER CHOICE: "; cin >> user_p_choice;
+//				if (user_p_choice < 1 || user_p_choice > 5) {
+//					cout << "ERROR: Please enter a valid option.\n";
+//				}
+//			} while (user_p_choice < 1 || user_p_choice > 5);
+//
+//			alex.addPharmCost(user_p_choice-1);
+//
+//			cout << endl;
+//
+//			break;
+//		case 3:
+//			cout << endl;
+//			cout << "How long has the patient stayed in the hospital?" << endl;
+//			cout << "NUM DAYS: "; cin >> num_days;
+//			alex.addDailyRate(num_days);
+//			break;
+//		default:
+//			break;
+//		}
+//
+//	} while (user_m_choice != 3);
+//
+//	cout << "TOTAL CHARGES COME TO..." << endl;
+//	cout << "$" << alex.getTotalCharges() << endl;
+//
+//	return 0;
+//}
+//void showMainMenu() {
+//	cout << "-----------------------" << endl;
+//	cout << "       Main Menu       " << endl;
+//	cout << "-----------------------" << endl;
+//
+//	cout << "1. Add Surgery Type" << endl;
+//	cout << "2. Add Medication Type" << endl;
+//	cout << "3. Check Patient Out" << endl;
+//	cout << endl;
+//}
