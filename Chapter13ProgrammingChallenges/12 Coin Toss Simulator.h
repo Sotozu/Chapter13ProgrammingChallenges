@@ -19,12 +19,18 @@ private:
 	
 public:
 	//Constructor
-	Coin();
+	Coin() {
+		flip();
+	}
 
 	//Mutator;
-	void Toss();
+	void Toss() {
+		flip();
+	}
 
 	//Accessor
-	std::string returnSideUp() const;
+	std::string returnSideUp() const {
+		return side_up;
+	}
 };
 

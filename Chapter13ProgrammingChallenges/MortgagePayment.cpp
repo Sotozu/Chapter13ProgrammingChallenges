@@ -26,8 +26,6 @@ void MortgagePayment::setLoan(double l) {
 void MortgagePayment::setRate(double r) {
 	interest_rate = r;
 	calc_Term_MonthlyPayment();
-
-
 }
 void MortgagePayment::setYear(int y) {
 	years = y;

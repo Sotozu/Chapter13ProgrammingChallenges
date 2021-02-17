@@ -1,9 +1,9 @@
-#include <iostream>
-#include <iomanip>
-#include <string>
-#include <memory>
-#include <time.h>
-#include <cstdlib>
+//#include <iostream>
+//#include <iomanip>
+//#include <string>
+//#include <memory>
+//#include <time.h>
+//#include <cstdlib>
 //#include "Date.h"
 //#include "Employee.h"
 //#include "Car.h"
@@ -22,9 +22,9 @@
 //#include "CashRegister.h"
 //#include "InventoryItem.h"
 //#include "Game21.h";
-#include "Trivia19.h"
+//#include "Trivia19.h"
 //#include "PatientAccount.h"
-using namespace std;
+//using namespace std;
 
 // 1. Date
 // Date.cpp

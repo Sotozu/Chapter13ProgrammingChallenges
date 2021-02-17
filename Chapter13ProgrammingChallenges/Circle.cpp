@@ -15,7 +15,6 @@ double Circle::getRadius() const {
 }
 double Circle::getArea() const {
 	return pi * std::pow(radius, 2);
-
 }
 double Circle::getDiameter() const {
 	return radius * 2;
